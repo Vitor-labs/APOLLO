@@ -1,0 +1,18 @@
+# conf/config.yaml
+defaults:
+  - dataset: syndromes
+  - model: linear_regression
+
+dataset:
+  iris:
+    path: /path/to/iris.csv
+    features: [sepal_length, sepal_width, petal_length, petal_width]
+    target: species
+
+model:
+  linear_regression:
+    learning_rate: 0.01
+    epochs: 100
+  decision_tree:
+    max_depth: 5
+    min_samples_split: 2
